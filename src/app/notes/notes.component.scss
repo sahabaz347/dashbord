@@ -1,0 +1,29 @@
+.notes-wrapper {
+  height: 100%;
+  overflow-y: auto;
+}
+.note-card {
+  background-color: rgba($color: black, $alpha: 0.5);
+  width: 60%;
+  border-radius: 5px;
+  margin: auto;
+  padding: 8px 20px;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: rgba($color: white, $alpha: 0.85);
+  transition: 0.12s;
+  &:hover {
+    background-color: rgba($color: black, $alpha: 0.65);
+    color: rgba($color: white, $alpha: 1);
+
+    backdrop-filter: blur(1.5px);
+  }
+}
+.note-card-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.note-card-content {
+  margin-top: 10px;
+}

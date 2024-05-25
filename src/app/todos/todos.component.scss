@@ -1,0 +1,54 @@
+.todos-wrapper {
+  height: 100%;
+  overflow-y: auto;
+}
+.todo-text {
+  color: rgba($color: white, $alpha: 0.8);
+}
+.todos-item {
+  display: flex;
+  background-color: rgba($color: black, $alpha: 0.6);
+  width: 50%;
+  border-radius: 25px;
+  margin: auto;
+  padding: 10px 15px;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.check-box {
+  display: flex;
+  padding: 4px;
+  border: 2px solid rgba($color: white, $alpha: 0.35);
+  border-radius: 50%;
+  margin-right: 15px;
+  i {
+    font-size: 18px;
+    opacity: 0;
+  }
+}
+.todos-item:hover {
+  .todo-text {
+    color: white;
+  }
+  .check-box {
+    border-color: transparent;
+    background-color: rgba($color: white, $alpha: 0.35);
+  }
+}
+.todos-item.complete {
+  .todo-text {
+    color: rgba($color: white, $alpha: 0.78);
+  }
+  .check-box {
+    background: rgb(9, 218, 89);
+    border-color: transparent;
+  }
+  i {
+    opacity: 1;
+  }
+}
+.todo-text,
+.check-box {
+  transition: 0.15;
+}
